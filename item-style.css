@@ -1,0 +1,47 @@
+header {
+    text-align: center;
+    padding: 10% 15px;
+    margin-top: 120px;
+}
+
+footer {
+    text-align: center;
+}
+
+.box-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 800px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,.10);
+}
+
+.item-img {
+    width: 100%;
+}
+
+.item-img img {
+    width: 100%;
+}
+
+input, textarea {
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: #ddd;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 200px;
+}

@@ -1,0 +1,112 @@
+header {
+    text-align: center;
+    padding: 15% 15px;
+    margin-top: 120px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+section {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    padding: 20px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.10);
+    border-radius: 5px;
+}
+
+.admin-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #ddd;
+    color: #121212;
+    transition: ease .2s;
+    margin: 5px 0;
+    box-sizing: border-box;
+    width: 100%;
+
+    text-decoration: none;
+}
+
+.admin-box .btn:hover {
+    cursor: pointer;
+}
+
+.default:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.create-data:hover {
+    color: #000;
+    background-color: #91FF00;
+}
+
+.edit-market:hover {
+    color: #fff;
+    background-color: #FFC300;
+}
+
+.delete-market:hover {
+    color: #fff;
+    background-color: #FF1A00;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.market-box {
+    margin: 25px 0;
+    width: 500px;
+}
+
+.img-box {
+    height: 260px;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Success & Error */
+.success {
+    padding: 10px;
+    text-align: center;
+    background-color: #91FF00;
+}
+
+.error {
+    padding: 10px;
+    text-align: center;
+    background-color: #FF1A00;
+}

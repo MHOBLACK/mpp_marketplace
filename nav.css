@@ -1,0 +1,58 @@
+@import 'https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/NotoSansThaiLooped/NotoSansThaiLooped.css';
+
+* {
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,.10);
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.nav-content {
+    display: flex;
+    width: 100%;
+}
+
+.nav-left {
+    justify-content: left;
+}
+
+.nav-right {
+    justify-content: right;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 5px;
+    text-align: center;
+
+    color: #121212;
+
+    transition: ease .2s;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #121212;
+    box-shadow: 2px 2px 25px rgba(0,0,0,.10);
+}
+
+.nav-link-active {
+    background-color: #121212;
+    color: #fff;
+    box-shadow: 2px 2px 25px rgba(0,0,0,.10);
+}
