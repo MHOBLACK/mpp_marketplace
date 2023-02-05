@@ -17,6 +17,7 @@
 
         // ไปที่หน้า index.php
         header('location: index.php');
+
     }
 
     // ตรวจสอบเงื่อนไขว่ามี Session 'username' หรือไม่
@@ -25,37 +26,39 @@
         // สร้างตัวแปร username สำหรับเก็บค่า Session 'username'
         $username = $_SESSION['username'];
 
-        // สร้างตัวแปร SQL ดึงข้อมูลภายในตารางที่มีชื่อว่า 'user' ที่มีข้อมูล 'username' มีค่าเท่ากับ '$username'
+        // สร้างตัวแปร SQL ดึงข้อมูลภายในตารางที่มีชื่อว่า 'user' ที่มีข้อมูลในคอลัมน์ 'username' มีค่าเท่ากับ '$username'
         $check_user = "SELECT * FROM user WHERE username = '$username'";
 
-        // สร้างตัวแปร Query แสดงผลว่ามีข้อมูลกี่แถว
+        // สร้างตัวแปร Query แสดงผลว่าข้อมูล
         // $conn คือตัวแปรจาก server.php ที่ใช้สำหรับการเชื่อมต่อฐานข้อมูล
         $check_user_query = mysqli_query($conn, $check_user);
 
         // สร้างตัวแปร Fetch แสดงข้อมูลจากแถวนั้นๆ ออกมาจากการ Query ของตัวแปร '$check_user_query'
         // โดยเป็นการแสดงข้อมูลนั้นๆ โดยกำหนดว่า จะแสดงข้อมูลจาก Column ไหน
         $check_user_result = mysqli_fetch_assoc($check_user_query);
+
     }
 
     // สร้างตัวแปร SQL เพื่อดึงข้อมูลจากตารางที่มีชื่อว่า 'market_list'
     $show_market = "SELECT * FROM market_list";
 
-    // สร้างตัวแปร Query แสดงผลว่ามีข้อมูลกี่แถว
+    // สร้างตัวแปร Query แสดงผลข้อมูล
     $show_market_query = mysqli_query($conn, $show_market);
 
     // สร้างตัวแปร Fetch ดึงข้อมูลจากแถวทั้งหมดออกมาจากการ Query
     $show_market_result = mysqli_fetch_all($show_market_query, MYSQLI_ASSOC);
 
-    // สร้างตัวแปร SQL ดึงข้อมูลภายในตารางที่มีชื่อว่า 'rating_market' ที่มีข้อมูล 'voter' มีค่าเท่ากับ '$username'
+    // สร้างตัวแปร SQL ดึงข้อมูลภายในตารางที่มีชื่อว่า 'rating_market' ที่มีข้อมูลในคอลัมน์ 'voter' มีค่าเท่ากับ '$username'
     $show_user_rating = "SELECT * FROM rating_market WHERE voter = '$username'";
 
-    // สร้างตัวแปร Query แสดงผลว่ามีข้อมูลกี่แถว
+    // สร้างตัวแปร Query แสดงผลข้อมูล
     // $conn คือตัวแปรจาก server.php ที่ใช้สำหรับการเชื่อมต่อฐานข้อมูล
     $show_user_rating_query = mysqli_query($conn, $show_user_rating);
 
     // สร้างตัวแปร Fetch แสดงข้อมูลจากแถวทั้งหมด ออกมาจากการ Query ของตัวแปร '$show_user_rating_query'
     // โดยเป็นการแสดงผลข้อมูลทั้งหมด โดยกำหนดว่า จะแสดงข้อมูลจาก Column ไหน
     $show_user_rating_result = mysqli_fetch_all($show_user_rating_query, MYSQLI_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
