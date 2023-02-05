@@ -11,7 +11,7 @@ https://linktr.ee/pepozx
 > คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์
 
 ## ขั้นตอนการใช้งาน (สำหรับหน้าเว็ปไซต์)
-1. ดาวน์โหลดโปรแกรม [XAMPP] (https://www.apachefriends.org/download.html) สำหรับ Windows
+1. ดาวน์โหลดโปรแกรม [XAMPP] (https://www.apachefriends.org/download.html). สำหรับ Windows
 2. เปิดโปรแกรม XAMPP
 3. ติดตั้ง Apache & MySQL ตรงคอลัมน์ Service
 5. กด Start ตรงคอลัมน์ Actions
