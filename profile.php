@@ -69,7 +69,9 @@
 
             <?php if ($check_user_result['role'] === "admin") : ?>
 
-                <a href="manage_user.php" class="btn default">จัดการรายชื่อ</a>
+                <p>
+                    <a href="manage_user.php" class="btn default">จัดการรายชื่อ</a>
+                </p>
 
                 <div class="container">
 

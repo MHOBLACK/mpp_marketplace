@@ -1,6 +1,6 @@
 <?php
+    session_start();
     include('db/server.php');
-    include('db/check_user.php');
 
     if (isset($_GET['logout'])) {
         session_destroy();
@@ -9,11 +9,23 @@
     }
 
     if (isset($_SESSION['username'])) {
+
         $username = $_SESSION['username'];
+
         $check_user = "SELECT * FROM user WHERE username = '$username'";
         $check_user_query = mysqli_query($conn, $check_user);
         $check_user_result = mysqli_fetch_assoc($check_user_query);
+    
+        $user_role = $check_user_result['role'];
+    
+        if ($user_role !== 'admin') {
+            header('location: index.php');
+        }
+        
+    } else {
+        header('location: index.php');
     }
+
 
     $show_user = "SELECT * FROM user";
     $show_user_query = mysqli_query($conn, $show_user);
