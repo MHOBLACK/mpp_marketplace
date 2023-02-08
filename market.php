@@ -75,7 +75,6 @@
             <?php if (isset($_SESSION['username'])) : ?>
 
                 <a href="profile.php" class="nav-link"><?php echo $_SESSION['username'] ?></a>
-
                 <a href="?logout='1'" class="nav-link">ออกจากระบบ</a>
             
             <?php else : ?>
@@ -194,26 +193,30 @@
                     <div class="item-desc">
                         <h2><?php echo $item['item_name'] ?></h2>
                         <p><?php echo nl2br($item['item_content']) ?></p>
-                        <p>ราคา ฿<?php echo $item['item_price'] ?></p>
                         <p>หมวดหมู่ : <?php echo $item['item_category'] ?></p>
                         <p>ประเภท : <?php echo $item['item_type'] ?></p>
                     </div>
 
                     <div class="item-manage">
-                        <?php if (isset($_SESSION['username'])) : ?>
-                            <?php if ($owner == $_SESSION['username']) : ?>
-                                <?php if (isset($_SESSION['success'])) : ?>
-                                    <p class="success">
-                                        <?php 
-                                            echo $_SESSION['success'];
-                                            unset($_SESSION['success']);
-                                        ?>
-                                    </p>
+                        <div class="item-price">
+                            <p>฿<?php echo $item['item_price'] ?></p>
+                        </div>
+                        <div class="item-button">
+                            <?php if (isset($_SESSION['username'])) : ?>
+                                <?php if ($owner == $_SESSION['username']) : ?>
+                                    <?php if (isset($_SESSION['success'])) : ?>
+                                        <p class="success">
+                                            <?php 
+                                                echo $_SESSION['success'];
+                                                unset($_SESSION['success']);
+                                            ?>
+                                        </p>
+                                    <?php endif ?>
+                                    <a href="edit_item.php?market_name=<?php echo $market_name ?>&item_id=<?php echo $item['item_id'] ?>" class="btn edit-market">แก้ไข</a>
+                                    <a href="delete_item.php?market_name=<?php echo $market_name ?>&item_id=<?php echo $item['item_id'] ?>" class="btn delete-market">ลบ</a>
                                 <?php endif ?>
-                                <a href="edit_item.php?market_name=<?php echo $market_name ?>&item_id=<?php echo $item['item_id'] ?>" class="btn edit-market">แก้ไข</a>
-                                <a href="delete_item.php?market_name=<?php echo $market_name ?>&item_id=<?php echo $item['item_id'] ?>" class="btn delete-market">ลบ</a>
                             <?php endif ?>
-                        <?php endif ?>
+                        </div>
                     </div>
 
                 </div>
