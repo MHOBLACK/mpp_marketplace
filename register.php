@@ -1,7 +1,5 @@
 <?php
-    // เริ่ม Session
     session_start();
-    // ใช้ตัวแปรร่วมกับไฟล์ server.php
     include('db/server.php');
 ?>
 
@@ -61,8 +59,6 @@
 
                     <div class="input-group">
 
-                        <!-- ตรวจสอบเงื่อนไขว่ามีข้อมูลใน Error หรือไม่ -->
-                        
                         <?php if (isset($_SESSION['error'])) : ?>
                             <p class="error">
                                 <?php 

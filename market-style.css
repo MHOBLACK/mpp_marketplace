@@ -18,7 +18,7 @@ header h1 {
     text-align: center;
 }
 
-.admin-box .btn, .btn {
+.admin-box .btn, .btn, select {
     padding: 10px;
     border-radius: 5px;
     outline: none;
