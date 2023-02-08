@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>สามารถดู Source Code ของเว็ปไซต์ได้ที่ <a href="" class="btn default">GitHub</a></p>
+                            <p>สามารถดู Source Code ของเว็ปไซต์ได้ที่ <a href="https://github.com/MHOBLACK/mpp_marketplace" class="btn default">GitHub</a></p>
                         </div>
 
                     </div>
