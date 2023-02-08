@@ -19,7 +19,7 @@
 
             if (mysqli_num_rows($user_check_query) == 1) {
                 $_SESSION['username'] = $username;
-                $_SESSION['birthdate'] = $user_check_result['role'];
+                $_SESSION['user_role'] = $user_check_result['role'];
 
                 header('location: ../index.php');
             } else {

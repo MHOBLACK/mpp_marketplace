@@ -1,6 +1,6 @@
 <?php 
-    session_start();
     include('db/server.php');
+    include('db/check_user.php');
 
     $error = array();
 

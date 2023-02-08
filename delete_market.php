@@ -1,5 +1,6 @@
 <?php 
     include('db/server.php');
+    include('db/check_user.php');
 
     $market_id = $_GET['delete_market_id'];
 

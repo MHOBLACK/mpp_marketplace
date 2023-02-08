@@ -1,6 +1,7 @@
 <?php 
-    session_start();
+
     include('db/server.php');
+    include('db/check_user.php');
 
     $market_name = $_GET['market_name'];
 

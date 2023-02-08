@@ -1,5 +1,6 @@
-<?php 
+<?php
     include('db/server.php');
+    include('db/check_user.php');
 
     $item_id = $_GET['item_id'];
     $market_name = $_GET['market_name'];

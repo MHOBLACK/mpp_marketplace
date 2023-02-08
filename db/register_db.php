@@ -34,7 +34,7 @@
             mysqli_query($conn, $insert_user);
 
             $_SESSION['username'] = $username;
-            $_SESSION['role'] = 'member';
+            $_SESSION['user_role'] = 'member';
             header('location: ../index.php');
         } else {
             header('location: ../register.php');
