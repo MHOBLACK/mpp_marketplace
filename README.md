@@ -20,7 +20,7 @@ https://linktr.ee/pepozx
 
 ## ขั้นตอนการใช้งาน (สำหรับหน้าเว็ปไซต์)
 1. ดาวน์โหลดโปรแกรม [XAMPP] (https://www.apachefriends.org/download.html). สำหรับ Windows
-2. เปิดโปรแกรม XAMPP
+2. เปิดโปรแกรม XAMPP ด้วยการคลิกขวา เลือก "Run as administrator"
 3. ติดตั้ง Apache & MySQL ตรงคอลัมน์ Service
 5. กด Start ตรงคอลัมน์ Actions
 6. คลิกแท็บ "Explorer"
