@@ -19,7 +19,7 @@ https://linktr.ee/pepozx
 5. ผู้พัฒนาเว็ปไซต์ MyPepozx
 
 ## ขั้นตอนการใช้งาน (สำหรับหน้าเว็ปไซต์)
-1. ดาวน์โหลดโปรแกรม [XAMPP] (https://www.apachefriends.org/download.html). สำหรับ Windows
+1. ดาวน์โหลดโปรแกรม [XAMPP](https://www.apachefriends.org/download.html) สำหรับ Windows
 2. เปิดโปรแกรม XAMPP ด้วยการคลิกขวา เลือก "Run as administrator"
 3. ติดตั้ง Apache & MySQL ตรงคอลัมน์ Service
 5. กด Start ตรงคอลัมน์ Actions
