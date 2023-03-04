@@ -30,7 +30,7 @@ https://linktr.ee/pepozx
 10. เสร็จสิ้น
 
 ## ขั้นตอนการใช้งาน (สำหรับฐานข้อมูล)
-1. เปิด Browser แล้วพิมพ์ที่แทบค้นหา "[localhost/phpmyadmin](localhost/phpmyadmin)"
+1. เปิด Browser แล้วพิมพ์ที่แทบค้นหา "[localhost/phpmyadmin](http://localhost/phpmyadmin)"
 2. ทำตามนี้
 ![Screenshot 2023-02-05 175650](https://user-images.githubusercontent.com/81527409/216815175-efaa9a43-0cf7-4b30-8ff2-bf2bf2d71a7c.jpg)
 3. หลังจากทำข้อ 2 เสร็จแล้ว
